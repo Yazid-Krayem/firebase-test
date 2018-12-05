@@ -8,7 +8,17 @@ import firebase from 'firebase';
 class App extends Component {
   constructor(props){
     super(props);
-   
+
+    // Firebase configuration 
+    var config = {
+      apiKey: "",
+      authDomain: "",
+      databaseURL: "",
+      projectId: "",
+      storageBucket: "",
+      messagingSenderId: ""
+    };
+    firebase.initializeApp(config);
   }
   render() {
     return (
